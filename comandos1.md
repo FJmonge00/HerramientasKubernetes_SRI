@@ -1,4 +1,4 @@
-Comandos minikube
+# Comandos minikube
 
 ```bash
 minikube --help
@@ -27,8 +27,14 @@ minikube stop
 minikube delete
 ```
 
-Configuraciones
 
+## Elegir driver de hipervidor 
+
+```bash
+minikube config set driver virtualbox
+```
+
+## Configuraciones de anfitriona
 
 ```bash
 cat $HOME/.kube/config
