@@ -1,0 +1,17 @@
+apiVersion: v1 # La versión
+kind: Pod # Tipo de objeto
+metadata: # Metadatos
+  name: mi-app
+  labels:
+    app: web
+spec: # Describe el estado ideal de nuestro objeto
+  containers:
+    - name: frontal
+      image: nginx
+      ports:
+        - containerPort: 80
+    - name: almacen
+      image: redis
+      ports:
+        - containerPort: 6379
+
