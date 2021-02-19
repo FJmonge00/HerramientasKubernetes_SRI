@@ -1,0 +1,11 @@
+apiVersion: v1 #Indicamos la versión
+kind: Pod # El tipo de componente que queremos crear
+metadata:
+  name: nginx1 # El nombre del pod
+  labels: #Definimos una serie de etiquetas
+    zone: prod 
+    version: v1
+spec: # Las especificaciones (Las características deseables de este pod)
+  containers:
+   - name: nginx #El nombre del contenedor  
+     image: nginx #Indicamos la imagen
