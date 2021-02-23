@@ -131,3 +131,7 @@ minikube ssh
 ```
 
 ![capturas](../imagenes/contenedoresCLuster.jpg)
+
+__________________________________________________
+
+[Volver al índice](../../README.md)

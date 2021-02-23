@@ -36,5 +36,6 @@ kubectl apply -f nginx.yaml
 kubectl describe pod nginx1
 ```
 
+__________________________________________________
 
-
+[Volver al índice](../../README.md)

@@ -73,7 +73,6 @@ kubectl get pod nginx1 -o json
 
 [Clic descargar YAML exportado](P04FicheroYaml.md)
 
+__________________________________________________
 
-
-
-
+[Volver al índice](../../README.md)

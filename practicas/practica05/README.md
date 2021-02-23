@@ -10,8 +10,6 @@ minikube dashboard
 ```
 ![capturas](../../imagenes/dashboard.jpg)
 
+__________________________________________________
 
-
-
-
-
+[Volver al índice](../../README.md)

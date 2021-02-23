@@ -61,3 +61,7 @@ kubectl port-forward mi-app 8081:80
 ![fotos](../../imagenes/localhostFrontal.png)
 
 ![fotos](../../imagenes/accesoLocalhost.png)
+
+__________________________________________________
+
+[Volver al índice](../../README.md)

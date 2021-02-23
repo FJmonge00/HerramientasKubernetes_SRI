@@ -18,8 +18,6 @@ kubectl delete pod nginx1 --now
 kubectl delete pods --all
 ```
 
+__________________________________________________
 
-
-
-
-
+[Volver al índice](../../README.md)
