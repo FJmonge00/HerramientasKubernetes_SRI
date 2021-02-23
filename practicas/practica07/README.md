@@ -27,7 +27,7 @@ spec: # Describe el estado ideal de nuestro objeto
 kubectl create -f multi.yml
 ```
 
-![fotos](../../imagenes/multiPods)
+![fotos](../../imagenes/multiPods.jpg)
 
 ## Ver estado detallado
 

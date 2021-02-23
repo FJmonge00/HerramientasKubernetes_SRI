@@ -130,12 +130,6 @@ kubectl exec tomcat -it -- bash
 kubectl describe pod tomcat # Ver que sigue habiendo 0 reinicios
 ```
 
-![fotos](../../imagenes/nuncaReinicia)
+![fotos](../../imagenes/nuncaReinicia.png)
 
 *No reinicia los pods NUNCA*
-
-
-
-
-
-
