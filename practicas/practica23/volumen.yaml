@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volumenes
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - mountPath: /datos
+      name: datos
+    - mountPath: /git
+      name: git
+      readOnly: true
+    - mountPath: /temp
+      name: temp
+  volumes:
+  - name: datos
+    hostPath:
+      path: /home/datos
+  - name: git
+    gitRepo:
+      repository: https://github.com/mftienda/PowerShellAdministradores.git
+  - name: temp
+    emptyDir: {}
