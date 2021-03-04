@@ -4,8 +4,30 @@
 
 > Por defecto la politica de Kubernetes intentará reinciar el pod
 
+## Borramos los pods
+
+```bash
+kubectl delete pods --all
+```
+
 ## Práctica 1:  La opción: Allways
 ### Utilizaremos el archivo restart-always.yml
+
+*YAML...*
+
+```yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tomcat
+  labels:
+    app: tomcat
+spec:
+  containers:
+   - name: tomcat     
+     image: tomcat
+  restartPolicy: Always # No haría falta porque es predeterminada
+```
 
 ```bash
 kubectl apply -f restart-always.yaml
@@ -31,6 +53,22 @@ kubectl describe pod tomcat # Ver que hay 1 reinicios
 *Automaticamente Kubernetes reinicia*
 
 ## Práctica 2:  La opción: Onfailure
+
+*YAML...*
+
+```yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tomcat
+  labels:
+    app: tomcat
+spec:
+  containers:
+   - name: tomcat     
+     image: tomcat
+  restartPolicy: OnFailure
+```
 
 ```bash
 kubectl apply -f restart-onfailure.yaml

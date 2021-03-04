@@ -8,6 +8,11 @@ kubectl create -f nginx.yaml
 
 *Obtener YAML*
 ```bash
+kubectl get pod nginx1 -o wide
+```
+
+*Obtener YAML*
+```bash
 kubectl get pod nginx1 -o yaml
 ```
 

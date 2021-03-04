@@ -1,23 +1,38 @@
 # Etiquetas REVISAR TAREA
+## Práctica 1:  Creación de objetos con diversas anotaciones
 
-*Ver etiquetas*
-```bash
-kubectl get pod tomcat --show-labels
+*YAML...*
+
+```yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tomcat4
+  labels:
+    estado: "produccion"
+    responsable: "pedro"
+  annotations:
+    doc: "Se debe compilar con gcc"
+    adjunto: "ejemplo de anotacion"
+spec:
+  containers:
+   - name: tomcat     
+     image: tomcat
 ```
 
-*Ver TODAS LAS etiquetas*
-```bash
-kubectl get pods --show-labels
-```
-
-# Lanzamos los PODs
+## Lanzamos los PODs
 
 ```bash
-kubectl apply -f tomcat1.yaml
-kubectl apply -f tomcat2.yaml
-kubectl apply -f tomcat3.yaml
 kubectl apply -f tomcat4.yaml
 ```
+
+## Ver anotaciones
+
+```bash
+kubectl describe pod tomcat4
+```
+
+
 
 *Ver TODOS LOS PODS con etiqueta DESARROLLO*
 
@@ -60,3 +75,10 @@ kubectl get pods --show-labels -l 'estado notin (desarrollo,testing)'
 ```bash
 kubectl delete pods -l estado=desarrollo
 ```
+
+### Ver desde el Dashboard
+
+```bash
+minikube dashboard
+```
+![Imágen](../../imagenes/)

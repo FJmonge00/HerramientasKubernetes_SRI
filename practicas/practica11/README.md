@@ -1,23 +1,22 @@
-# Etiquetas REVISAR TAREA
-
-*Ver etiquetas*
-```bash
-kubectl get pod tomcat --show-labels
-```
+# Selectores
 
 *Ver TODAS LAS etiquetas*
 ```bash
 kubectl get pods --show-labels
 ```
+## Práctica 1:  Creación de objetos con diversas etiquetas
 
-# Lanzamos los PODs
+### Lanzamos los pods
 
 ```bash
 kubectl apply -f tomcat1.yaml
 kubectl apply -f tomcat2.yaml
 kubectl apply -f tomcat3.yaml
-kubectl apply -f tomcat4.yaml
 ```
+
+[YAML Tomcat 1](./tomcat1.yaml)
+[YAML Tomcat 2](./tomcat2.yaml)
+[YAML Tomcat 3](./tomcat3.yaml)
 
 *Ver TODOS LOS PODS con etiqueta DESARROLLO*
 
@@ -31,31 +30,31 @@ kubectl get pods --show-labels -l estado=desarrollo
 kubectl get pods --show-labels -l estado=testing
 ```
 
-*Ver TODOS LOS PODS (CON AND) con etiqueta Desarrollo y respondable*
+*Ver TODOS LOS PODS **(CON AND)** con etiqueta Desarrollo y respondable*
 
 ```bash
 kubectl get pods --show-labels -l estado=desarrollo,responsable=juan
 ```
 
-*Ver TODOS LOS PODS (CON OR Y NEGATIVO) con etiqueta Desarrollo y respondable NO SEA JUAN*
+*Ver TODOS LOS PODS **(CON OR Y NEGATIVO)** con etiqueta Desarrollo y respondable NO SEA JUAN*
 
 ```bash
 kubectl get pods --show-labels -l responsable!=juan
 ```
 
-*Ver TODOS LOS PODS (CON in) con etiqueta Desarrollo y respondable NO SEA JUAN*
+*Ver TODOS LOS PODS **(CON in)** con etiqueta Desarrollo y respondable NO SEA JUAN*
 
 ```bash
 kubectl get pods --show-labels -l 'estado in (desarrollo,testing)'
 ```
 
-*Ver TODOS LOS PODS QUE NO SEAN (CON not in) con etiqueta Desarrollo y respondable NO SEA JUAN*
+*Ver TODOS LOS PODS QUE NO SEAN **(CON not in)** con etiqueta Desarrollo y respondable NO SEA JUAN*
 
 ```bash
 kubectl get pods --show-labels -l 'estado notin (desarrollo,testing)'
 ```
 
-*BORRAR TODOS LOS PODS QUE SEAN DESARROLLO (CON not in) con etiqueta Desarrollo y respondable NO SEA JUAN*
+*BORRAR TODOS LOS PODS QUE SEAN DESARROLLO*
 
 ```bash
 kubectl delete pods -l estado=desarrollo

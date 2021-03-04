@@ -47,7 +47,7 @@ kubectl exec nginx2 -it -- bash
 
 ![capturas](../../imagenes/dentrodelcontenedor.png)
 
-### Práctica 2:  Crear un pod que contenga un servidor apache.
+## Práctica 2:  Crear un pod que contenga un servidor apache.
 
 ### Levantamos el pods
 
@@ -80,12 +80,9 @@ kubectl exec apache -it -- bash
 curl localhost
 ```
 
-![capturas](../../imagenes/accesoweb.png)
-
-
 ## Práctica 3:  Comprobar el clúster con kubectl proxy
 
-### Establecer una conexion con kubernetes
+### Establecer una conexión con kubernetes
 
 ```bash
 kubectl proxy
@@ -134,4 +131,4 @@ minikube ssh
 
 __________________________________________________
 
-[Volver al índice](../../../../README.md)
+[Volver al índice](../../../README.md)
