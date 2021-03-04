@@ -7,13 +7,13 @@
 kubectl run nginx1 --image=nginx
 ```
 
-![capturas](../imagenes/crearpods.jpg)
+![capturas](../../imagenes/crearpods.jpg)
 
 ### Estado del pod
 ```bash
 kubectl get pods
 ```
-![capturas](../imagenes/estadoPods.jpg)
+![capturas](../../imagenes/estadoPods.jpg)
 
 ### Levantamos un segundo pod
 ```bash
@@ -25,14 +25,14 @@ kubectl run nginx2 --image=nginx
 kubectl get pods
 ```
 
-![capturas](../imagenes/otroPod.jpg)
+![capturas](../../imagenes/otroPod.jpg)
 
 ### Información detallada del pod
 ```bash
 kubectl describe pod nginx2
 ```
 
-![capturas](../imagenes/detallada.jpg)
+![capturas](../../imagenes/detallada.jpg)
 
 ### Ejecutar un comando dentro del pod
 
@@ -45,7 +45,7 @@ kubectl exec nginx2 -- ls
 kubectl exec nginx2 -it -- bash
 ```
 
-![capturas](../imagenes/dentrodelcontenedor.png)
+![capturas](../../imagenes/dentrodelcontenedor.png)
 
 ### Práctica 2:  Crear un pod que contenga un servidor apache.
 
@@ -72,7 +72,7 @@ kubectl get pods
 kubectl exec apache -it -- bash
 ```
 
-![capturas](../imagenes/accesoapache.png)
+![capturas](../../imagenes/accesoapache.png)
 
 ### Acceso a la web
 
@@ -80,7 +80,7 @@ kubectl exec apache -it -- bash
 curl localhost
 ```
 
-![capturas](../imagenes/accesoweb.png)
+![capturas](../../imagenes/accesoweb.png)
 
 
 ## Práctica 3:  Comprobar el clúster con kubectl proxy
@@ -103,7 +103,7 @@ firefox http://127.0.0.1:8001/healthz
 http://127.0.0.1:8001/api/v1/namespaces/default
 ```
 
-![capturas](../imagenes/apis.jpg)
+![capturas](../../imagenes/apis.jpg)
 
 ### PODS
 
@@ -111,7 +111,7 @@ http://127.0.0.1:8001/api/v1/namespaces/default
 http://127.0.0.1:8001/api/v1/namespaces/default/pods
 ```
 
-![capturas](../imagenes/apis.jpg)
+![capturas](../../imagenes/apis.jpg)
 
 ### POD de apache
 
@@ -119,7 +119,7 @@ http://127.0.0.1:8001/api/v1/namespaces/default/pods
 http://127.0.0.1:8001/api/v1/namespaces/default/pods/apache
 ```
 
-![capturas](../imagenes/apachePod.jpg)
+![capturas](../../imagenes/apachePod.jpg)
 
 ## OTROS APUNTES
 
@@ -130,8 +130,8 @@ minikube ssh
 # Dentro docker ps
 ```
 
-![capturas](../imagenes/contenedoresCLuster.jpg)
+![capturas](../../imagenes/contenedoresCLuster.jpg)
 
 __________________________________________________
 
-[Volver al índice](../../README.md)
+[Volver al índice](../../../../README.md)
