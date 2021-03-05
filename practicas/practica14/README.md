@@ -28,6 +28,7 @@ spec:
 ```
 
 ## Crear Deployment
+
 ```bash
 kubectl apply -f deploy_nginx.yaml
 ```
