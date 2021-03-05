@@ -34,7 +34,7 @@ spec:
       path: /home/datos
   - name: git
     gitRepo:
-      repository: https://github.com/mftienda/PowerShellAdministradores.g$
+      repository: https://github.com/mftienda/PowerShellAdministradores.git
   - name: temp
     emptyDir: {}
 ```
