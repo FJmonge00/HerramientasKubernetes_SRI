@@ -20,6 +20,7 @@
 ## [Práctica 15 Escalar Deployment respecto a las *etiquetas*](practicas/practica15/)
 ## [Práctica 16 Servicios de forma Imperativa](practicas/practica16/)
 ## [Práctica 17 Servicios de forma Declarativa](practicas/practica17/)
+> Proximamente de la 18-22 (Rolling Updates, RolloutArchivo Rolling CreateArchivo)
 ## [Práctica 23 Volúmenes locales en un POD](practicas/practica23/)
 ## [Práctica 24 Compartir volumen entre Pods](practicas/practica24/)
 ## [Práctica 25 PV y PVC](practicas/practica25/)
